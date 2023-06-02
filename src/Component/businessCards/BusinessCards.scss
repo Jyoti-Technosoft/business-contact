@@ -1,0 +1,64 @@
+.business-card {
+  transition: box-shadow 0.3s ease-in-out;
+  min-height: 98%;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 5px 15px rgb(128, 128, 128);
+  }
+  .custom-list {
+    list-style-type: none;
+  }
+  .logo-list {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+  }
+  .horizontal-line {
+    top: 5px;
+    border-left: 2px solid #dfdfdf;
+  }
+  .list-item {
+    margin-left: 12px;
+    color: #adacb0 ;
+    &::marker {
+      color: #ededed;
+      margin-left: 5px;
+    }
+  }
+  .business-card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      background: #ededed;
+      position: absolute;
+      left: 17px;
+      top: 20px;
+      height: calc(100% - 58px);
+    }
+    .list-item {
+      position: relative;
+      padding-left: 24px;
+      margin-left: "12px";
+      color: #808080;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #ededed;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        border-radius: 10px;
+      }
+    }
+    &::marker {
+      margin-left: 5px !important;
+    }
+  }
+}
