@@ -13,9 +13,14 @@
     height: 1.5em;
     border-radius: 50%;
   }
+  .telephone-logo{
+    margin-top: 3px;
+  }
   .horizontal-line {
-    top: 5px;
+    display: inline-block;
     border-left: 2px solid #dfdfdf;
+    height: 18px;
+    margin-top: 4px;
   }
   .list-item {
     margin-left: 12px;
